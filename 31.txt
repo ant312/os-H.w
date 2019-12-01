@@ -1,0 +1,29 @@
+for(j=0;j<r;j++)
+{
+p[i].before[j]=av[j]-p[i].need[j];
+p[i].after[j]=p[i].before[j]+p[i].max[j];
+av[j]=p[i].after[j];
+p[i].max[j]=0;
+}
+printf("\n p%d \t",i+1);
+for(j=0;j<r;j++)
+printf("%d",p[i].before[j]);
+printf("\t");
+for(j=0;j<r;j++)
+printf("%d",p[i].after[j]);
+cn=0;
+cz=0;
+c++;
+break;
+}
+else {
+cn=0;cz=0;
+}
+}
+}
+if(c==n)
+printf("\n the above sequence is a safe sequence");
+else
+printf("\n deadlock occured");
+getch();
+}

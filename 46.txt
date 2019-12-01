@@ -1,0 +1,12 @@
+ if(notfound==1)
+ return i;
+ }
+ temp=optcal[0];
+ for(i=1;i<nof;i++)
+ if(temp<optcal[i])
+ temp=optcal[i];
+ for(i=0;i<nof;i++)
+ if(frm[temp]==frm[i])
+ return i;
+return 0;
+}
